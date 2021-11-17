@@ -4,19 +4,17 @@
 
 00:00:00 format is ael:vaefz:faeb, and 0/00/00 format is faun/aufze/nu.
 
-100 faeb = 1 vaefz
-
-100 vaefz = 1 ael
-
-100 ael  = 1 nu
-
-100 nu = 1 aufze
-
-100 aufze = 1 faun
-
 1 faeb = 1 second
 
-1 aufze ~= 3.2 earth years
+100 faeb = 1 vaefz ≈ 1.67 minutes
+
+100 vaefz = 1 ael ≈ 2.78 hours
+
+100 ael  = 1 nu ≈ 1.65 weeks
+
+100 nu = 1 aufze ≈ 3.17 years
+
+100 aufze = 1 faun ≈ 3.17 centuries
 
 # Pronuncitions Using [Diacritics](https://spellpundit.com/spellshakti/diacritical-marks):
 
