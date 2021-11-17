@@ -1,13 +1,28 @@
 import datetime
-import time
+from threading import Thread as t
 
 utc = datetime.timezone.utc
-startDate = datetime.datetime(2021, 11, 17, 18, 59, 0, tzinfo=utc)
 print('Galactic Time is currently:')
 
-while True:
-    timePassed = str(int((datetime.datetime.now().astimezone(utc) - startDate).total_seconds()))
-    GTstring = '0'*(14 - len(timePassed)) + timePassed
-    datetimeString = f"{GTstring[0:4]}/{GTstring[4:6]}/{GTstring[6:8]}   {GTstring[8:10]}:{GTstring[10:12]}:{GTstring[12:]}"
-    print(' '*20 + '\b'*(len(list(datetimeString)) + 30), end=datetimeString + '\033[?25l')
-    time.sleep(0.001)
+global globalVars
+globalVars = [datetime.datetime(2021, 11, 17, 18, 59, 0, tzinfo=utc), '00000000000000']
+
+def output():
+    while True:
+        text = globalVars[1]
+        text = f"{text[0:4]}/{text[4:6]}/{text[6:8]}   {text[8:10]}:{text[10:12]}:{text[12:]}"
+        print(' '*20 + '\b'*(len(text) + 30), end=text + '\033[?25l')
+
+def getPassedTime():
+    while True:
+        number = str(int((datetime.datetime.now().astimezone(utc) - globalVars[0]).total_seconds()))
+        globalVars[1] = '0'*(14-len(number)) + number
+
+def main():
+    outputThread = t(target=output)
+    outputThread.start()
+    passedTimeThread = t(target=getPassedTime)
+    passedTimeThread.start()
+
+mainThread = t(target=main)
+mainThread.start()
