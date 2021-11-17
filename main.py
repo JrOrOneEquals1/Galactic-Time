@@ -8,4 +8,5 @@ while timePassed >= 1:
     datetimeList[timesDone] = timePassed[1]
     timePassed = int(timePassed[0])
     timesDone += 1
-print(f"{str(datetime.datetime.now()).split('.')[0]} in Galactic Time is:\n{datetimeList[5]}/{datetimeList[4]}/{datetimeList[3]}   {datetimeList[2]}:{datetimeList[1]}:{datetimeList[0]}")
+print(f"{str(datetime.datetime.now()).split('.')[0]} in Galactic Time is:")
+print("{datetimeList[5]}/{datetimeList[4]}/{datetimeList[3]}   {datetimeList[2]}:{datetimeList[1]}:{datetimeList[0]}")
