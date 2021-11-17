@@ -19,13 +19,13 @@ print('\n')
 
 if input('Loop? [y/n]\n>^< ').startswith('y'):
     while True:
-        timePassed = int((datetime.datetime.now().astimezone(utc) - startDate).total_seconds())
+        timePassed = str((datetime.datetime.now().astimezone(utc) - startDate).total_seconds())
         datetimeList = [0, 0, 0, 0, 0, 0]
         timesDone = 0
-        while timePassed >= 1:
-            datetimeList[timesDone] = int(str(timePassed)[-2:])
+        while int(timePassed) >= 1:
+            datetimeList[timesDone] = timePassed[-2:]
             try:
-                timePassed = int(str(timePassed)[:-2])
+                timePassed = timePassed[:-2]
             except ValueError:
                 break
             timesDone += 1
