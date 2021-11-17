@@ -1,7 +1,8 @@
 import datetime
 import time
 utc = datetime.timezone.utc
-timePassed = int((datetime.datetime.now().astimezone(utc) - datetime.datetime(2021, 11, 17, 18, 59, 0, tzinfo=utc)).total_seconds())
+startDate = datetime.datetime(2021, 11, 17, 18, 59, 0, tzinfo=utc)
+timePassed = int((datetime.datetime.now().astimezone(utc) - startDate).total_seconds())
 datetimeList = [0, 0, 0, 0, 0, 0]
 timesDone = 0
 while timePassed >= 1:
@@ -18,7 +19,7 @@ print('\n')
 
 if input('Loop? [y/n]\n>^< ').startswith('y'):
     while True:
-        timePassed = int((datetime.datetime.now().astimezone(utc) - datetime.datetime(2021, 11, 17, 18, 59, 0, tzinfo=utc)).total_seconds())
+        timePassed = int((datetime.datetime.now().astimezone(utc) - startDate).total_seconds())
         datetimeList = [0, 0, 0, 0, 0, 0]
         timesDone = 0
         while timePassed >= 1:
