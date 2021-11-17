@@ -21,9 +21,11 @@ if input('Loop? [y/n]\n>^< ').startswith('y'):
         datetimeList = [0, 0, 0, 0, 0, 0]
         timesDone = 0
         while timePassed >= 1:
-            timePassed = str(timePassed / 100).split('.')
-            datetimeList[timesDone] = timePassed[1]
-            timePassed = int(timePassed[0])
+            datetimeList[timesDone] = int(str(timePassed)[-2:])
+            try:
+                timePassed = int(str(timePassed)[:-2])
+            except ValueError:
+                break
             timesDone += 1
         datetimeString = f"{datetimeList[5]}/{datetimeList[4]}/{datetimeList[3]}   {datetimeList[2]}:{datetimeList[1]}:{datetimeList[0]}"
         print('\b'*len(list(datetimeString)), end=datetimeString)
