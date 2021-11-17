@@ -2,7 +2,7 @@ import datetime
 from threading import Thread as t
 
 utc = datetime.timezone.utc
-print('Galactic Time is currently:')
+print('GT is currently:')
 
 global globalVars
 globalVars = [datetime.datetime(2021, 11, 17, 18, 59, 0, tzinfo=utc), '00000000000000']
