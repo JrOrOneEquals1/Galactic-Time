@@ -18,7 +18,7 @@
 
 1 aufze ~= 3.2 earth years
 
-# Pronuncitions using diacritics:
+# Pronuncitions Using [Diacritics](https://spellpundit.com/spellshakti/diacritical-marks):
 
 Faeb:    feb
 
