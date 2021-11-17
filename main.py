@@ -29,5 +29,5 @@ if input('Loop? [y/n]\n>^< ').startswith('y'):
                 break
             timesDone += 1
         datetimeString = f"{datetimeList[5]}/{datetimeList[4]}/{datetimeList[3]}   {datetimeList[2]}:{datetimeList[1]}:{datetimeList[0]}"
-        print('\b'*(len(list(datetimeString)) + 1), end=datetimeString + '\033[?25l')
+        print('\b'*(len(list(datetimeString)) + 10), end=datetimeString + '\033[?25l')
         time.sleep(0.001)
