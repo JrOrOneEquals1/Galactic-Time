@@ -16,7 +16,7 @@
 
 100 aufze = 1 faun ≈ 3.17 centuries
 
-# Pronuncitions Using [Diacritics](https://spellpundit.com/spellshakti/diacritical-marks):
+# Pronunciations Using [Diacritics](https://spellpundit.com/spellshakti/diacritical-marks):
 
 Faeb:    feb
 
