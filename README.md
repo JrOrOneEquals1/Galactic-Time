@@ -21,8 +21,13 @@
 # Pronuncitions using diacritics:
 
 Faeb:    feb
+
 Vaefz:   veth
+
 Ael:     el
+
 Nu:      nü
+
 Aufze:   äth-ē
+
 Faun:    fän
