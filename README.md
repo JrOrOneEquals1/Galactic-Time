@@ -2,7 +2,7 @@
 
 18:49:00 UTC on 11/17/2021 is the official start time, when GT (Galactic Time) is 00:00:00 0/00/00.
 
-00:00:00 format is ael:vaefz:faeb, and 0/00/00 format is faun/aufze/nu.
+00/00/00 format is faun/aufze/nu, and 00:00:00 format is ael:vaefz:faeb.
 
 1 faeb = 1 second
 
